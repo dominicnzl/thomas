@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>To do list</title>
+    <link rel="icon" type="image/jpg" href="/images/favicon-pineapple.jpg">
+</head>
+<body>
+
+
+<h1 class="title">todos</h1>
+<form id="todo-form" onsubmit="todoListCreator()">
+    <input type="checkbox" id="todo-input-toggle">
+    <input type="text" id="todo-input-text" placeholder="Fill in your plan">
+</form>
+
+<template id="list-item-template">
+    <li class="list-item">
+        <input type="checkbox" class="status-checked" name="form-checkbox">
+        <span class="task-text"></span>
+        <button class="delete">X</button>
+    </li>
+</template>
+
+<ol id="ordered-todo-list">
+</ol>
+
+
+<span id="list-counter"></span>
+
+
+<footer class="info">
+    <p>Double click to edit a todo.</p>
+    <p>Created by Thomas Brom.</p>
+</footer>
+
+
+<script src="alt.js"></script>
+</body>
+</html>
